@@ -1,0 +1,100 @@
+body { 
+	padding-top: 70px;
+	background-color: #E1E3E3;
+}
+
+.activity .panel-body{
+  padding-bottom:0;
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color:white;
+}
+
+.thumbnail {
+  padding:0;
+  margin: 0;
+}
+
+.activity {
+  margin-bottom: 8px;
+  border-radius:13px;
+}
+
+.post-heading {
+  border-bottom: 1px #D0D5D6 solid;
+  margin: 0 5px;
+}
+
+.post {
+  width:89%;
+}
+
+h3 {
+  margin:0;
+}
+.post-content {
+  min-height:50px;
+  padding: 5px;
+}
+
+.post-footer {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.picture {
+  padding: 0 0 0 15px;
+  width:80px;
+}
+
+.post-date {
+  float:right;
+  font-size: 17px;
+  margin-top:5px;
+}
+
+.post-title {
+  display: inline-block;
+}
+
+.post-user {
+  display: inline-block;
+}
+
+#provider {
+  display:inline-block;
+  padding:5px 0;
+}
+
+#provider i {
+  color: #0084b4;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#likes {
+  margin-bottom: 5px;
+}
+
+.post-imgs{
+  width:150px;
+}
+
+.modal-header {
+  background-color: #2c3e50;
+  color:white;
+}
+
+.modal-header span {
+  color:white;
+}
+

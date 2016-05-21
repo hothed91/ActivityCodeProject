@@ -1,0 +1,43 @@
+  <% activities.forEach(function(activity){ %>
+    <div id="<%=activity._id%>" class="panel panel-default activity">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-2 col-xs-4 picture">
+          <div class="pull-left thumbnail">
+            <img src=<%=activity.actor_avator%>>
+          </div>
+        </div>
+        <!--Picture col end-->
+        <div class="col-md-10 col-xs-8 post">
+          <div class="post-heading">
+            <h3 class="post-title"><%=activity.actor_description%></h3>
+            <em class="post-user">by <%=activity.actor_name%></em> (<div id="provider">
+            <i class="fa fa-<%=activity.provider%>" aria-hidden="true"></i>
+            <span><a href="<%=activity.actor_url%>"><%=activity.actor_username%></a></span>
+          </div>)
+            <div class="post-date">
+              <%=activity.activity_date%>
+            </div>
+          </div>
+          <div class="post-content">
+            <p>
+              <% if(activity.activity_attachment_type === "image/jpeg"){ %>
+                <div class="thumbnail post-imgs"><a href="<%=activity.activity_url%>"><img src="<%=activity.activity_message%>"></a></div>
+              <% } else {%>
+                <%= activity.activity_message %>
+                <a href="<%=activity.activity_url%>">Go to source</a>
+              <% } %>
+            </p>
+          </div>
+          <div class="post-footer">
+            <div id="likes" class="pull-right">
+              <span class="likesVal"><%=activity.activity_likes%></span>
+              <span role="presentation" aria-hidden="true"> · </span>
+              <a href="#">Like</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }); %>

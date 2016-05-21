@@ -1,0 +1,13 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+
+  <% if(error){ %>
+  <script>
+    $(document).ready(function(){
+      displayErrorModal("<%=error%>");
+    });
+  </script>
+  <% } %>
+
+<% include partials/footer %>
